@@ -176,8 +176,5 @@ def weiterleitung(code):
 
 erstelle_datenbank()  # Stellt sicher, dass die Datenbank existiert, sobald das Programm startet
 
-   if __name__ == "__main__":
+      if __name__ == "__main__":
        app.run(debug=True)
-   else:
-       # Wird genutzt, wenn die App über einen echten Server (z.B. Render) läuft
-       pass
