@@ -172,9 +172,7 @@ def weiterleitung(code):
     ziel_url, klicks = ergebnis  # Trennt das Ergebnis auf
     zaehle_klick_hoch(code)  # Erhöht den Klick-Zähler für diesen Link um 1
     return redirect(ziel_url)  # Leitet den Browser zur echten, langen URL weiter
-
-
 erstelle_datenbank()  # Stellt sicher, dass die Datenbank existiert, sobald das Programm startet
 
-      if __name__ == "__main__":
+if __name__ == "__main__":
        app.run(debug=True)
